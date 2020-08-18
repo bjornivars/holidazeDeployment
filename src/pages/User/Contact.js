@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import POST_CONTACTFORM from './../../constants/constants';
+import POST_CONTACTFORM from '../../constants/constants';
 import Navbar from './../../components/User/navbar';
 import Footer from './../../components/User/footer';
 
