@@ -1,0 +1,189 @@
+.footer{
+    overflow: hidden;
+    width: 100%;
+    z-index: 10;
+    &-ul{
+        margin: 0;
+        list-style-type: none;
+        &-li{
+            color: $white;
+            margin: auto;
+        }
+    }
+    &-logo{
+        display: flex;
+        align-items: center;
+        &-img{
+            width: 100%;
+            top: auto;
+            bottom: auto;
+        }
+    }
+}
+.bg-gray{
+    background-color: $icon-gray;
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        margin-top: 20em;
+            &-admin{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            text-align: center;
+            padding-top: 10em;
+            padding-bottom: 10em;
+            margin-top: 20em;
+        }
+        &-ul{
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20%;
+            &-admin{
+                width: 60%;
+                margin-top: 4em;
+                margin-right: 0;
+                display: flex;
+                justify-content: space-between;
+                padding-right: 5em;
+                color: $white;
+            }
+            &-li{
+                color: $white;
+                margin: auto;
+                &-admin{
+                    display: block;
+                    color: $white;
+                    margin: auto;
+                    padding-bottom: 2em;
+                }
+            }
+        }
+        &-logo{
+            width:20%;
+            height: auto;
+            margin-left: 5em;
+            &-admin{
+                padding-top: 3em;
+                width:20%;
+                margin: auto;
+            }
+            &-img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        margin-top: 10em;
+        &-admin{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 10em;
+        }
+        &-ul{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10%;
+            &-admin{
+                width: 100%;
+                margin-top: 4em;
+                margin-right: 0;
+                display: block;
+            }
+            &-li{
+                color: $white;
+                margin: auto;
+                &-admin{
+                    display: block;
+                    color: $white;
+                    margin: auto;
+                    padding-bottom: 2em;
+                }
+            }
+        }
+        &-logo{
+            width:25%;
+            height: auto;
+            margin-left: 5em;
+            &-admin{
+                padding-top: 3em;
+                width:50%;
+                margin: auto;
+            }
+        &-img{
+            width: 100%;
+            }
+        }
+    }
+}
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .footer{
+        display: block;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        margin-top: 10em;
+        &-admin{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 10em;
+        }
+        &-ul{
+            width: 80%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding-top: 3em;
+            &-admin{
+                width: 100%;
+                margin-top: 2em;
+                margin-right: 0;
+                display: block;
+            }
+            &-li{
+                display: block;
+                color: $white;
+                margin: auto;
+                padding-bottom: 40px;
+                &-admin{
+                    display: block;
+                    color: $white;
+                    margin: auto;
+                    padding-bottom: 2em;
+                }
+            }
+        }
+        &-logo{
+            width:80%;
+            height: auto;
+            margin: auto;
+            &-admin{
+                padding-top: 3em;
+                width:50%;
+                margin: auto;
+            }
+            &-img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

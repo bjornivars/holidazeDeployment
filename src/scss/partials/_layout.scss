@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre&display=swap');
+
+body{
+    background-color: $bg-color;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+}
+h1{
+    font-family: "Proza Libre";
+}
+h2{
+    font-family: "Proza Libre";
+    font-size: 30px;
+    margin-top: 0;
+}
+h3{
+    font-family: "Open Sans";
+    font-size: 25px;
+    margin-top: 0;
+    font-weight: normal;
+}
+h4{
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+p{
+    font-family: "Open Sans";
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: $black;
+    font-family: "Proza Libre";
+    text-decoration: none;
+}
+input{
+    background-color: $lightgray;
+}
+
+.link{
+    color: $btn-bg;
+}
+
+span{
+    font-family: "Open Sans";
+}
+.text-overflow-ellipsis{
+    text-overflow: ellipsis;
+}
+.overflow-h{
+    overflow: hidden;
+}
+textarea,
+input[type=text] {
+    font-family:Arial, Helvetica, sans-serif;
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PLACEMENT STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.m-auto{
+    margin: auto;
+}
+.m-0{
+    margin: 0;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+.d-hidden{
+    visibility: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.break-word{
+    overflow-wrap: break-word;
+}
+
+.pl-5{
+    padding-left: 5px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FLEX STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-start{
+    justify-content: start;
+}
+.jc-end{
+    justify-content: flex-end;
+}
+.ji-center{
+    justify-items: center;
+}
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ COLOR STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.white{
+    color: $white;
+}
+.orange{
+    color: $icon-orange;
+}
+
+.purple{
+    color: $btn-bg;
+}
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ICON STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.fa-h-square{
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: $icon-gray;
+}
+
+.icon-grey{
+    font-size: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    color: $icon-gray;
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MESSAGE STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.errorMessage{
+    color: red;
+    &-white{
+        color: $white;
+        
+    }
+}
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ OTHER STYLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.container{
+    margin-top: 10em;
+}
+.copyright{
+    color: $white;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.largeBox{
+    background-color: $admin-blue;
+    color: $white;
+
+    &-text{
+        padding-top: 3em;
+        padding-bottom: 3em;
+        color: $white;
+        text-align: center;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+.border{
+    border: 1px solid $black !important;
+}
+
+.pageNotFound{
+    display: flex;
+    justify-content: center;
+    &-img{
+        margin-top: 5em;
+        width: 80%;
+        height: 90vh;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    .onlyMobile{
+        display: none;
+    }
+    .notMobile{
+        display: block;
+    }
+    .mobile-tablet{
+        display: none;
+    }
+}
+
+// Tablet
+@media screen and (max-width: 991px) {
+    h1{
+        font-family: "Proza Libre";
+    }
+    h2{
+        font-family: "Proza Libre";
+        font-size: 25px;
+        margin-top: 0;
+    }
+    h3{
+        font-family: "Open Sans";
+        font-size: 20px;
+        margin-top: 0;
+        font-weight: normal;
+    }
+    h4{
+        font-family: "Open Sans";
+        font-size: 18px;
+    }
+    .largeBox{
+        background-color: $admin-blue;
+        color: $white;
+        margin: auto;
+        margin-top: 2em;
+        &-text{
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: $white;
+            text-align: center;
+            font-size: 30px;
+        }
+        &-container{
+            display: block;
+            margin: auto;
+        }
+    }
+    .onlyMobile{
+        display: none;
+    }
+    .mobile-tablet{
+        display: block;
+    }
+    .notMobile{
+        display: block;
+    }
+    .notTablet{
+        display: none;
+    }
+    .container{
+        margin-top: 10em;
+    }
+}
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .onlyMobile{
+        display: block;
+    }
+    .mobile-tablet{
+        display: block;
+    }
+    .notMobile{
+        display: none;
+    }
+    .container{
+        margin-top: 5em;
+    }
+}

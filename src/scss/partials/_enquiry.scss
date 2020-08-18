@@ -1,0 +1,57 @@
+.enquiry{
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid $black;
+    &-box{
+        border-right: 1px solid $black;
+    }
+    &-form{
+        box-sizing: border-box;
+    }
+    &-name{
+        color: $admin-blue;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    .enquiry{
+        margin-bottom: 2em;
+        &-box{
+            padding: 20px;
+            &-right{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+// Tablet
+@media screen and (max-width: 991px) {
+    .enquiry{
+        margin-bottom: 2em;
+        &-box{
+            padding: 20px;
+            &-right{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .enquiry{
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+        &-box{
+            border-right: none;
+            padding: 20px;
+            &-right{
+                box-sizing: border-box;
+                padding: 20px;
+            }
+        }
+    }
+}

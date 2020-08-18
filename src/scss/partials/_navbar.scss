@@ -1,0 +1,171 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    &-ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: auto;
+        vertical-align: middle;
+        padding: 0;
+        width: 25%;
+        margin-right: 2em;
+        &-li{
+            color: $white;
+            margin: auto;
+            vertical-align: middle;
+        }
+    }
+    &-logo{
+        width:200px;
+        margin-left: 2em;
+        &-img{
+            width: 100%;
+        }
+    }
+}
+
+.admin{
+    background-color: $admin-blue;
+    &-ul{
+        width: 50%;
+    }
+    &-text{
+        margin: 0;
+        color: $white;
+        font-weight: bold;
+    }
+}
+
+
+// Desktop
+@media screen and (min-width: 992px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: $blue;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 10;
+        &-ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: auto;
+            vertical-align: middle;
+            padding: 0;
+            width: 25%;
+            margin-right: 2em;
+            &-li{
+                color: $white;
+                margin: auto;
+                vertical-align: middle;
+            }
+        }
+        &-logo{
+            width:200px;
+            margin-left: 2em;
+            &-img{
+                width: 100%;
+            }
+        }
+    }
+    
+    .admin{
+        background-color: $admin-blue;
+        &-ul{
+            width: 50%;
+        }
+        &-text{
+            margin: 0;
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nav{
+        position: fixed;
+        top: 0;
+    background-color: $blue;
+        &-ul{
+            padding: 0;
+            width: 45%;
+            margin-right: 2em;
+            &-li{
+                color: $white;
+                margin: auto;
+                vertical-align: middle;
+            }
+        }
+
+    }
+    .onlyMobile{
+        display: none;
+    }
+}
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: $blue;
+        position: fixed;
+        bottom: 0;
+        height: 3em;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 10;
+        &-ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: auto;
+            vertical-align: middle;
+            padding: 0;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            &-li{
+                color: $white;
+                margin: auto;
+                vertical-align: middle;
+                text-align: center;
+                font-size: small;
+                &-icon{
+                    text-align: center;
+                    font-size: x-large;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &-logo{
+            display: none;
+            &-img{
+                width: 100%;
+            }
+        }
+    }
+
+    .admin{
+        &-ul{
+            width: 100%;
+        }
+    }
+    
+}

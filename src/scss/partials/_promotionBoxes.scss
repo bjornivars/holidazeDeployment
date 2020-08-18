@@ -1,0 +1,81 @@
+.promotion{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    &-box{
+        background-color: $white;
+        box-shadow: $box-shadow;
+        &-text{
+            position: relative;
+            z-index: 1;
+            &-h3{
+                margin-bottom: .5em;
+            }
+            &-p{
+                white-space: nowrap; 
+                width: 100%; 
+                overflow: hidden;
+                text-overflow: ellipsis; 
+            }
+        }
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    .promotion{
+        position: absolute;
+        top: 35em;
+        display: flex;
+        justify-content: space-between;
+        &-box{
+            &-text{
+                padding: 15px 15px 15px 15px;
+            }
+        }
+    }
+}
+
+// Tablet
+@media screen and (max-width: 991px) {
+    .promotion{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10em;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        &-box{
+            &-text{
+                padding: 10px 10px 10px 10px;
+                &-h3{
+                    margin-bottom: .5em;
+                }
+                &-p{
+                    white-space: nowrap; 
+                    width: 100%; 
+                    overflow: hidden;
+                    text-overflow: ellipsis; 
+                }
+            }
+        }
+    }
+
+}
+
+
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .promotion{
+        display: block;
+        margin-top: 7.5em;
+        &-box{
+            margin-top: 4em;
+        }
+    }
+}

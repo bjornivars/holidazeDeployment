@@ -1,0 +1,86 @@
+.form-input{
+    display: block;
+    background-color: $lightgray;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    border: 0;
+    &-dflex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    &-icon{
+        padding: 10px;
+        background: $icon-orange;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+        border-right: none;
+        vertical-align: middle;
+        &-comment{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &-contact{
+        border-left: none;
+    }
+}
+
+.label{
+    margin-bottom: .5em;
+}
+.input-padding{
+    padding-left: 20px;
+}
+/* Style the input container */
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  label{
+      display: block;
+  }
+
+  .errorMessage{
+      color: $error;
+  }
+  .successMessage{
+      color: green;
+  }
+
+  .contact{
+      &-container{
+        background-color: $blue;
+        padding-bottom: 5em;
+        padding-top: 5em;
+        color: $white;
+      }
+  }
+
+.adultsChildren{
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+  // MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .contact{
+        &-container{
+          background-color: $blue;
+          padding-bottom: 2.5em;
+          padding-top: 2.5em;
+          color: $white;
+        }
+    }
+
+    .label{
+        &-padding{
+            margin-bottom: 15px;
+        }
+    }
+}
+    

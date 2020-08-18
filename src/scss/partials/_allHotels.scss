@@ -1,0 +1,103 @@
+// General styles
+.borderRound{
+    border-radius: 2em 2em 2em 2em;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(175, 175, 175);
+    box-shadow: $box-shadow;
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+    
+    .allHotels{
+        margin-bottom: 5.5em
+    }
+    .hotel-card{
+        margin: 1em;
+        box-shadow: $box-shadow;
+        &:hover{
+            box-shadow: $box-shadow-hover;
+        }
+        &-img{
+            min-height: 10em;
+            max-height: 10em;
+            min-width: 1em;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+        &-price{
+            color: $icon-orange;
+            font-weight: bold;
+        }
+        &-guest{
+            font-size: 16px;
+        }
+    }
+}
+
+// Tablet
+@media screen and (max-width: 991px) {
+    .allHotels{
+        margin-bottom: 5.5em
+    }
+    .hotel-card{
+        margin: 1em;
+        box-shadow: $box-shadow;
+        &:hover{
+            box-shadow: $box-shadow-hover;
+        }
+        &-img{
+            height: 7.5em;
+            min-width: 1em;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+        &-price{
+            color: $icon-orange;
+            font-weight: bold;
+        }
+        &-guest{
+            font-size: 16px;
+        }
+    }
+}
+// MOBILE DEVICES
+@media screen and (max-width: 767px) {
+    .hotel{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .allHotels{
+        margin-bottom: 5.5em
+    }
+    .hotel-card{
+        margin: 0;
+        margin-bottom: 1.5em;
+        box-shadow: $box-shadow;
+        &:hover{
+            box-shadow: $box-shadow-hover;
+        }
+        &-img{
+            height: 7.5em;
+            min-width: 1em;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+        &-price{
+            color: $icon-orange;
+            font-weight: bold;
+        }
+        &-guest{
+            font-size: 16px;
+        }
+    }
+}
