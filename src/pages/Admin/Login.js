@@ -25,9 +25,9 @@ export default function Login(props) {
     }
 
     function getLocalStorageInfo() {
-        if (sessionStorage.getItem('username') !== 'cameron') {
+        if (sessionStorage.getItem('username') !== 'demo') {
             setErrorMessage('Username is incorrect')
-        } else if (sessionStorage.getItem('password') !== 'cameron23') {
+        } else if (sessionStorage.getItem('password') !== 'demo') {
             setErrorMessage('Password is incorrect')
         } else {
             props.updateLoginStatus();
