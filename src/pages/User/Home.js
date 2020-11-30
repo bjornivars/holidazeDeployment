@@ -7,7 +7,7 @@ import HomeHeader from './../../components/User/home/homeHeader';
 import PromotionBoxes from './../../components/User/home/promotionBoxes';
 import WinterHoliday from './../../components/User/home/winterHoliday';
 import { GET_ESTABLISHMENTS } from './../../constants/constants';
-import { NO_CORS } from './../../constants';
+import { NO_CORS } from './../../constants/constants';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
