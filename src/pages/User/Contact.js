@@ -1,9 +1,7 @@
-
-
-
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import POST_CONTACTFORM from '../../constants/constants';
 import Navbar from './../../components/User/navbar';
 import Footer from './../../components/User/footer';
 
@@ -17,7 +15,7 @@ export default function Contact() {
     form.append('clientName', data.clientName);
     form.append('email', data.email);
     form.append('message', data.message);
-    axios.post('http://localhost/holidaze/contact-success.php', form, {
+    axios.post(POST_CONTACTFORM, form, {
       headers: { 'Content-Type': 'multipart/form-data' },
     })
       .then(data => {//success
