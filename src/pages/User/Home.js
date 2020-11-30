@@ -7,7 +7,7 @@ import HomeHeader from './../../components/User/home/homeHeader';
 import PromotionBoxes from './../../components/User/home/promotionBoxes';
 import WinterHoliday from './../../components/User/home/winterHoliday';
 import { GET_ESTABLISHMENTS } from './../../constants/constants';
-// import { NO_CORS } from './../../constants/constants';
+import { NO_CORS } from './../../constants/constants';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         setshowDropdown(false);
     }
     useEffect(() => {
-        axios.get(GET_ESTABLISHMENTS)
+        axios.get(NO_CORS + GET_ESTABLISHMENTS)
             .then((result) => {
                 setAllEstablishments(result.data);
                 setEstablishmentNine(result.data[9]);
