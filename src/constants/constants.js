@@ -8,3 +8,4 @@ export const POST_CONTACTFORM = "https://skuggen.dev/holidaze-api/contact-succes
 export const POST_ENQUIRY = "https://skuggen.dev/holidaze-api/enquiry-success.php";
 export const POST_NEWESTABLISHMENT = "https://skuggen.dev/holidaze-api/add-establishments-success.php";
 
+export const NO_CORS = "https://noroffcors.herokuapp.com/";

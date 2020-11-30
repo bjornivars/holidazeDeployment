@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Login from './Login';
 import AdminFooter from './../../components/Admin/adminFooter';
 
+
 export default function HomePage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // eslint-disable-line
   function updateLogin() {
